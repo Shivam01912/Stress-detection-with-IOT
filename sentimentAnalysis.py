@@ -24,7 +24,7 @@ tempHedo=json.load(tempHedo)
 hedonometerWordDict={}
 
 for p in tempHedo['objects']:
-	hedonometerWordDict[p['word']]=(p['happs']-1)*(10/(8))-5	#Normalisation of data
+	hedonometerWordDict[p['word']]=(p['happs']-1)*(10/(8))-5			#-------Normalisation of data
 
 del tempHedo
 
@@ -59,7 +59,7 @@ try:
 	high=[]
 	critical=[]
 	veryCritical=[]
-	for x in xAxis:									#Creating reference lines
+	for x in xAxis:														#-------Creating reference lines
 		avg.append(avgStress)
 		medium.append(0.3125)
 		high.append(-0.625)
